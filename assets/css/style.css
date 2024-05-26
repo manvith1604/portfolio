@@ -11,16 +11,17 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #272829;
+  color: #f7f7f7;
+  background-color: #1e1e1e
 }
 
 a {
-  color: #0563bb;
+  color: #4e8cff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #067ded;
+  color: #91bfff;
   text-decoration: none;
 }
 
@@ -130,7 +131,7 @@ h6 {
 @media (max-width: 991px) {
   #header {
     width: 300px;
-    background: #fff;
+    background: #121212;
     border-right: 1px solid #e6e9ec;
     left: -300px;
   }
@@ -168,13 +169,13 @@ h6 {
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #45505b;
+  color: #f7f7f7;
   padding: 10px 18px;
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
-  background: #f2f3f5;
+  background: #121212;
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -210,8 +211,8 @@ h6 {
 .nav-menu .active,
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
-  color: #fff;
-  background: #0563bb;
+  color: #f7f7f7;
+  background: #1e1e1e;
 }
 
 .nav-menu a:hover span,
@@ -355,6 +356,7 @@ h6 {
 section {
   padding: 60px 0;
   overflow: hidden;
+  background-color: #1e1e1e;
 }
 
 .section-title {
@@ -748,7 +750,7 @@ section {
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: #1e1e1e;
   opacity: 1;
   border: 1px solid #0563bb;
 }
@@ -1152,8 +1154,8 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #f7f8f9;
-  color: #45505b;
+  background: #121212;
+  color: #f7f7f7;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
