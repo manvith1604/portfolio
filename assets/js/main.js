@@ -34,7 +34,6 @@
       }
     }
   }
-  new cursoreffects.followingDotCursor({ color: ["#0ca0f0"] });
   /**
    * Easy on scroll event listener 
    */
@@ -63,7 +62,7 @@
   onscroll(document, navbarlinksActive)
 
   window.addEventListener("load", (event) => {
-  new cursoreffects.ghostCursor();
+  new cursoreffects.followingDotCursor({ color: ["#0ca0f0"] });
   });
 
   /**
