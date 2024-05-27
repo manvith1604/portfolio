@@ -169,13 +169,13 @@ h6 {
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #f7f7f7;
+  color: #45505b;
   padding: 10px 18px;
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
-  background: #121212;
+  background: #f2f3f5;
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -211,8 +211,8 @@ h6 {
 .nav-menu .active,
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
-  color: #f7f7f7;
-  background: #1e1e1e;
+  color: #fff;
+  background: #0563bb;
 }
 
 .nav-menu a:hover span,
@@ -406,7 +406,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #728394;
+  color: #ebebeb;
 }
 
 .about .content ul {
@@ -427,7 +427,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #0563bb;
+  color: #0087FF;
   line-height: 0;
 }
 
@@ -494,7 +494,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #45505b;
+  color: #ebebeb;
 }
 
 .skills .progress .skill .val {
@@ -521,7 +521,7 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #45505b;
+  color: #ebebeb;
 }
 
 .resume .resume-item {
@@ -543,7 +543,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #f7f8f9;
+  background: #1e1e1e;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -680,12 +680,12 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #45505b;
+  color: #ebebeb;
   font-weight: 600;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #45505b;
+  color: #ebebeb;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
@@ -698,7 +698,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #45505b;
+  color: #ebebeb;
   margin: 0 2px;
   font-size: 28px;
   display: inline-block;
@@ -842,7 +842,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #45505b;
+  color: #ebebeb;
   transition: ease-in-out 0.3s;
 }
 
@@ -1017,7 +1017,7 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
+  background: #1e1e1e;
 }
 
 .contact .info i {
@@ -1039,7 +1039,7 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #45505b;
+  color: #ebebeb;
 }
 
 .contact .info p {
