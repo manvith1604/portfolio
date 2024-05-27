@@ -62,6 +62,10 @@
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
 
+  window.addEventListener("load", (event) => {
+  new cursoreffects.ghostCursor();
+  });
+
   /**
    * Scrolls to an element with header offset
    */
