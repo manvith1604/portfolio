@@ -61,10 +61,21 @@
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
 
-  window.addEventListener("load", (event) => {
-  new cursoreffects.followingDotCursor({ color: ["#0ca0f0"] });
-  });
+  /**
+ * Function to detect if the user is on a mobile device
+ */
+  const isMobile = () => {
+  return /Mobi|Android/i.test(navigator.userAgent);
+  }
 
+  /**
+   * Cursor effect - only initialize on non-mobile devices
+   */
+  if (!isMobile()) {
+    window.addEventListener("load", (event) => {
+      new cursoreffects.followingDotCursor({ color: ["#0ca0f0"] });
+    });
+  }
   /**
    * Scrolls to an element with header offset
    */
