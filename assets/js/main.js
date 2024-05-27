@@ -34,7 +34,7 @@
       }
     }
   }
-  new cursoreffects.trailingCursor({particles: 15, rate: 0.8, baseImageSrc: "data:image/png;base64,iVB..."});
+  new cursoreffects.followingDotCursor({ color: ["#0ca0f0"] });
   /**
    * Easy on scroll event listener 
    */
