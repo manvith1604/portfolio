@@ -335,13 +335,28 @@ h6 {
 
 /* New style for resume link */
 #hero .social-links .resume {
-  font-size: 24px;
+  font-size: 16px; /* Reduced font size */
   margin-right: 20px;
   color: #45505b;
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Ensure block layout */
 }
 
 #hero .social-links .resume i {
   margin-right: 5px;
+}
+
+#hero .social-links .resume-block {
+  display: inline-block; /* Ensure block layout */
+  background-color: #0563bb; /* Background color */
+  color: #fff; /* Text color */
+  padding: 8px 15px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+#hero .social-links .resume-block:hover {
+  background-color: #0678e3; /* Hover background color */
 }
 
 @media (max-width: 992px) {
