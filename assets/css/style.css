@@ -323,14 +323,14 @@ h6 {
 #hero .social-links a {
   font-size: 28px; /* Increased font size */
   display: inline-block;
-  color: #45505b;
+  color: #0563bb; /* Changed default color to blue */
   line-height: 1;
   margin-right: 30px; /* Increased margin */
   transition: 0.3s;
 }
 
 #hero .social-links a:hover {
-  color: #0563bb;
+  color: #0678e3; /* Changed hover color to a lighter blue */
 }
 
 /* New style for resume link */
