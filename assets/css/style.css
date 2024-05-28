@@ -322,7 +322,14 @@ h6 {
 #hero .social-links a .rounded-icon i {
   border-radius: 50%; /* Set 50% for a perfect circle */
   padding: 10px; /* Add padding to maintain space inside the icon */
-  background-color: #0678e3; /* Optional: Set a light background for contrast */
+  background-color: #0678e3;
+  color: #fff;
+}
+
+#hero .social-links a.blue-icon {
+  /* Inherit styles from rounded-icon for basic icon formatting */
+  background-color: #0563bb; /* Set blue background */
+  color: #fff; /* Set white text color */
 }
 
 #hero .social-links .resume-block {
@@ -330,7 +337,7 @@ h6 {
   background-color: #0563bb; /* Set blue background */
   color: #fff; /* Set white text color */
   padding: 10px 20px; /* Add padding for content */
-  border-radius: 5px; /* Add rounded corners */
+  border-radius: 15px; /* Add rounded corners */
   transition: 0.3s; /* Inherit transition for hover effect */
 }
 
