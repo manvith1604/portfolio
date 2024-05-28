@@ -347,6 +347,11 @@ h6 {
   border-radius: 50%; /* Make the icons round */
 }
 
+/* Apply rounded-icon class to all social links */
+#hero .social-links a.rounded-icon {
+  border-radius: 50%; /* Make the icons fully round */
+}
+
 /* Style for resume link */
 #hero .social-links .resume-block {
   font-size: 16px;
@@ -373,15 +378,15 @@ h6 {
     font-size: 32px;
     line-height: 36px;
   }
-  
+
   #hero .social-links a {
     color: #45505b; /* Set the default color for social links */
   }
 
   #hero .social-links a:hover {
-/*     background-color: transparent; /* Remove background color on hover */ */
     color: #45505b; /* Change text color on hover */
   }
+
   #hero p {
     margin-top: 10px;
     font-size: 20px;
