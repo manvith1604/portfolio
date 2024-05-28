@@ -378,15 +378,7 @@ h6 {
     font-size: 32px;
     line-height: 36px;
   }
-
-  #hero .social-links a {
-    color: #45505b; /* Set the default color for social links */
-  }
-
-  #hero .social-links a:hover {
-    color: #45505b; /* Change text color on hover */
-  }
-
+  
   #hero p {
     margin-top: 10px;
     font-size: 20px;
