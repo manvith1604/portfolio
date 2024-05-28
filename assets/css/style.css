@@ -319,16 +319,21 @@ h6 {
   margin-top: 30px;
 }
 
+#hero .social-links a {
+  line-height: 40px; /* Match the height of the resume block */
+  margin-right: 35px; /* Adjust margin-right for spacing */
+}
+
 #hero .social-links a .rounded-icon i {
   border-radius: 50%; /* Set 50% for a perfect circle */
-  padding: 10px; /* Add padding to maintain space inside the icon */
+  padding: 12px; /* Add padding to maintain space inside the icon */
   background-color: #0678e3;
   font-size: 28px; /* Increase icon size for better visibility */
   margin-right: 30px; /* Adjust margin for better spacing */
   color: #fff;
   line-height: 40px; /* Adjust to match resume block height */
-  padding-top: 8px; /* Adjust padding to center icon vertically */
-  padding-bottom: 8px;
+  padding-top: 4px; /* Adjust padding to center icon vertically */
+  padding-bottom: 4px;
 }
 
 #hero .social-links a.blue-icon {
