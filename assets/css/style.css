@@ -348,12 +348,12 @@ h6 {
 }
 
 /* Apply rounded-icon class to all social links */
-#hero .social-links a.rounded-icon {
+#hero .social-links a.rounded-icon i {
   border-radius: 50%; /* Make the icons fully round */
 }
 
 /* Style for resume link */
-#hero .social-links .resume-block {
+#hero .social-links a.resume-block {
   font-size: 16px;
   color: #fff;
   text-decoration: none;
@@ -364,7 +364,7 @@ h6 {
   transition: background-color 0.3s;
 }
 
-#hero .social-links .resume-block:hover {
+#hero .social-links a.resume-block:hover {
   background-color: #0678e3; /* Hover background color */
   color: #90c3f7;
 }
@@ -378,7 +378,15 @@ h6 {
     font-size: 32px;
     line-height: 36px;
   }
-  
+
+  #hero .social-links a {
+    color: #45505b; /* Set the default color for social links */
+  }
+
+  #hero .social-links a:hover {
+    color: #45505b; /* Change text color on hover */
+  }
+
   #hero p {
     margin-top: 10px;
     font-size: 20px;
