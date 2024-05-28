@@ -332,8 +332,6 @@ h6 {
   margin-right: 30px; /* Adjust margin for better spacing */
   color: #fff;
   line-height: 40px; /* Adjust to match resume block height */
-  padding-top: 4px; /* Adjust padding to center icon vertically */
-  padding-bottom: 4px;
 }
 
 #hero .social-links a.blue-icon {
