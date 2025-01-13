@@ -502,7 +502,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -647,7 +647,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.916);
   position: absolute;
   left: 30px;
   right: 30px;
@@ -722,7 +722,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #ebebeb;
+  color: #000000;
   margin: 0 2px;
   font-size: 28px;
   display: inline-block;
@@ -774,8 +774,7 @@ section {
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #1e1e1e;
-  opacity: 1;
+  background-color: #000000;
   border: 1px solid #0563bb;
 }
 
