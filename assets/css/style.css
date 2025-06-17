@@ -424,6 +424,82 @@ section {
   margin-bottom: 0;
 }
 
+
+/*--------------------------------------------------------------
+# Recommendations
+--------------------------------------------------------------*/
+.recommendations {
+  background-color: #1e1e1e; /* Match other sections */
+  color: #f7f7f7; /* Optional: match the body text color */
+}
+
+/* Ensure proper capitalization for section title */
+.linkedin-blue {
+  color: #0A66C2;
+  text-transform: none;
+}
+
+h2.text-light {
+  text-transform: none !important;
+}
+
+.testimonial-item {
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.testimonial-item p {
+  font-style: italic;
+  color: #ddd;
+}
+
+.testimonial-item h4 {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #8fce00;
+}
+
+.testimonial-item span {
+  display: block;
+  font-size: 14px;
+  color: #aaa;
+}
+
+#recommendations .card p {
+  font-size: 0.95rem;
+  color: #ddd;
+}
+#recommendations .card {
+  transition: transform 0.3s ease;
+}
+#recommendations .card:hover {
+  transform: scale(1.02);
+}
+
+.profile-pic {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background-color: #2a2a2a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.initials {
+  z-index: 1;
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
