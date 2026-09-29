@@ -3,908 +3,571 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Manvith Belame Yogesh | Data Engineer</title>
-  <meta content="Manvith Belame Yogesh, Data Engineer building reliable pipelines, data-quality frameworks and lineage-tracked infrastructure with Python, SQL, Airflow and AWS." name="description">
-  <meta content="Data Engineer, Python, SQL, Airflow, AWS, ETL, Data Quality, PostgreSQL, Polars" name="keywords">
+  <meta name="description" content="Manvith Belame Yogesh, Data Engineer building reliable pipelines, data-quality frameworks and lineage-tracked infrastructure with Python, SQL, Airflow and AWS.">
+  <meta name="keywords" content="Data Engineer, Python, SQL, Airflow, AWS, ETL, Data Quality, PostgreSQL, Polars">
+  <meta name="theme-color" content="#14110e">
 
-  <!-- Favicons -->
+  <meta property="og:title" content="Manvith Belame Yogesh | Data Engineer">
+  <meta property="og:description" content="Pipelines, data quality and lineage-tracked infrastructure with Python, SQL, Airflow and AWS.">
+  <meta property="og:image" content="assets/img/profile-img.jpeg">
+
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/site.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Apply saved theme before paint to avoid a flash -->
+  <script>
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
 
-  <!-- =======================================================
-  * Template Name: MyResume
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7LEL4M1X4J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7LEL4M1X4J');
+  </script>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7LEL4M1X4J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7LEL4M1X4J');
-</script>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
   <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#top" class="logo" aria-label="Manvith Belame Yogesh, home">
+        <svg class="logo-mark" viewBox="0 0 44 28" aria-hidden="true">
+          <path class="logo-path" d="M5 22 L16 6 L28 22 L39 6" />
+          <circle class="logo-node" cx="5" cy="22" r="3.2" />
+          <circle class="logo-node" cx="16" cy="6" r="3.2" />
+          <circle class="logo-node" cx="28" cy="22" r="3.2" />
+          <circle class="logo-node" cx="39" cy="6" r="3.2" />
+        </svg>
+        <span class="logo-text">manvith<span class="logo-dot">.</span>by<span class="caret" aria-hidden="true">_</span></span>
+      </a>
 
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#pipeline">pipeline</a></li>
+          <li><a href="#stack">stack</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#words">words</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
 
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Manvith Belame Yogesh</h1>
-      <p>I'm a <span class="typed" data-typed-items="Data Engineer, Pipeline Builder, Data Quality Advocate, AI Tooling Builder"></span></p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/manvith-b-y/" class="rounded-icon blue-icon" target="_blank"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/manvith1604" class="rounded-icon blue-icon" target="_blank"><i class="bx bxl-github"></i></a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=manvith18@gmail.com" class="rounded-icon blue-icon"><i class="bx bx-envelope"></i></a>
-        <a href="assets/img/Manvith_Belame_Yogesh_Resume.pdf" class="resume-block" target="_blank"> 
-            <i class="bx bx-file"></i> Resume
-        </a>
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle light and dark theme">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+        </button>
+        <a class="btn btn-small" href="assets/img/Manvith_Belame_Yogesh_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
       </div>
     </div>
-  </section>
-  <!-- End Hero -->
+  </header>
 
   <main id="main">
 
-<!-- Carousel Controls + Cards Wrapper -->
-<section id="recommendations" class="recommendations section-bg text-white py-5" style="background-color: #121212;">
-  <div class="container position-relative">
-    <div class="section-title text-center mb-5">
-      <h2 class="text-light">Linked<span style="color: #0A66C2;">In</span> Recommendations</h2>
-      <a href="https://www.linkedin.com/in/manvith-b-y/" target="_blank" class="btn btn-primary mt-2">View on LinkedIn</a>
-    </div>
-    <div class="row g-4 justify-content-center carousel-container" id="recommendation-cards">
-      <!-- Card 1 -->
-      <div class="col-md-6 recommendation-card" data-card="0">
-        <div class="card h-100" style="background-color: #1e1e1e; border: 1px solid #333;">
-          <div class="card-body">
-            <div class="d-flex align-items-start mb-3">
-              <div class="profile-pic me-3">
-                JW
-                <div class="linkedin-icon">
-                  <span class="linkedin-logo">in</span>
-                </div>
-              </div>
-              <div class="flex-grow-1">
-                <h6 class="mb-0">
-                  <a href="https://www.linkedin.com/in/jamiemwarner" target="_blank" class="name-link">Jamie Warner</a>
-                </h6>
-                <small class="text-muted mb-1 d-block">Data Science and Analytics Leader</small>
-                <small class="text-muted">June 2, 2025, Jamie managed Manvith directly</small>
-              </div>
-            </div>
-            <p class="text-light">"We had the pleasure of having Manvith as a key member of our team via the Co-op program at Northeastern University. Manvith played a pivotal role in modernizing data pipelines during his time at Plymouth. He was instrumental in driving cloud migration efforts and enhancing pipeline accuracy. I was impressed with Manvith's ability to optimize processes which significantly reduced execution times and brought down cloud compute costs. His problem-solving mindset, natural curiosity, and ability to work independently stood out throughout his Co-op. Manvith would be a great addition to any team in the data engineering space."</p>
+    <!-- ======= Hero ======= -->
+    <section class="hero" id="top">
+      <div class="glow glow-a" aria-hidden="true"></div>
+      <div class="glow glow-b" aria-hidden="true"></div>
+
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Data Engineer · Phoenix, AZ · open to relocation</p>
+          <h1>Manvith<br>Belame Yogesh</h1>
+          <p class="lede">I build pipelines that don't lie. Five years of turning messy, regulated data into
+            <strong>reliable, lineage-tracked, research-ready datasets</strong> with Python, SQL, Airflow and AWS.</p>
+          <div class="cta-row">
+            <a class="btn" href="#pipeline">Run my pipeline <span aria-hidden="true">↓</span></a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/manvith-b-y/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-ghost" href="https://github.com/manvith1604" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-ghost" href="mailto:manvith18@gmail.com">Email</a>
           </div>
+        </div>
+
+        <div class="avatar" aria-hidden="true">
+          <div class="avatar-ring"></div>
+          <div class="avatar-frame">
+            <img src="assets/img/profile-img.jpeg" alt="" width="320" height="320">
+          </div>
+          <span class="avatar-tag mono">status: <b>running</b></span>
         </div>
       </div>
+    </section>
 
-      <!-- Card 2 -->
-      <div class="col-md-6 recommendation-card" data-card="1">
-        <div class="card h-100" style="background-color: #1e1e1e; border: 1px solid #333;">
-          <div class="card-body">
-            <div class="d-flex align-items-start mb-3">
-              <div class="profile-pic me-3">
-                SL
-                <div class="linkedin-icon">
-                  <span class="linkedin-logo">in</span>
+    <!-- ======= Pipeline ======= -->
+    <section class="section pipeline-section" id="pipeline">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">// 01 · career_dag</p>
+          <h2>Every stage added something to the data.</h2>
+          <p class="section-sub">My career as a DAG, from JSS to today. Click any task to read its log.</p>
+        </div>
+
+        <div class="dag" data-state="idle">
+          <div class="dag-bar mono">
+            <span class="dag-title"><span class="dot-live" aria-hidden="true"></span> dag_id: <b>manvith_career</b></span>
+            <span class="dag-meta">schedule: <b>@continuous</b></span>
+            <span class="dag-meta">owner: <b>manvith</b></span>
+            <button type="button" class="dag-run" aria-label="Re-run pipeline animation">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg>
+              <span>re-run</span>
+            </button>
+          </div>
+
+          <div class="dag-track" role="tablist" aria-label="Career stages">
+            <button class="stage" role="tab" id="tab-jss" aria-controls="panel-jss" aria-selected="false" tabindex="-1">
+              <span class="stage-op mono">ingest</span>
+              <span class="stage-name">JSS S&amp;TU</span>
+              <span class="stage-date mono">2016 – 2020</span>
+              <span class="stage-status" aria-hidden="true"></span>
+            </button>
+            <span class="pipe" aria-hidden="true"></span>
+            <button class="stage" role="tab" id="tab-accenture" aria-controls="panel-accenture" aria-selected="false" tabindex="-1">
+              <span class="stage-op mono">transform</span>
+              <span class="stage-name">Accenture · Disney</span>
+              <span class="stage-date mono">2020 – 2023</span>
+              <span class="stage-status" aria-hidden="true"></span>
+            </button>
+            <span class="pipe" aria-hidden="true"></span>
+            <button class="stage" role="tab" id="tab-neu" aria-controls="panel-neu" aria-selected="false" tabindex="-1">
+              <span class="stage-op mono">enrich</span>
+              <span class="stage-name">Northeastern</span>
+              <span class="stage-date mono">2023 – 2025</span>
+              <span class="stage-status" aria-hidden="true"></span>
+            </button>
+            <span class="pipe" aria-hidden="true"></span>
+            <button class="stage" role="tab" id="tab-prac" aria-controls="panel-prac" aria-selected="false" tabindex="-1">
+              <span class="stage-op mono">migrate</span>
+              <span class="stage-name">Plymouth Rock</span>
+              <span class="stage-date mono">2024 – 2025</span>
+              <span class="stage-status" aria-hidden="true"></span>
+            </button>
+            <span class="pipe" aria-hidden="true"></span>
+            <button class="stage" role="tab" id="tab-cdf" aria-controls="panel-cdf" aria-selected="false" tabindex="-1">
+              <span class="stage-op mono">validate</span>
+              <span class="stage-name">Community Dreams</span>
+              <span class="stage-date mono">2025 – 2026</span>
+              <span class="stage-status" aria-hidden="true"></span>
+            </button>
+            <span class="pipe" aria-hidden="true"></span>
+            <button class="stage" role="tab" id="tab-walnut" aria-controls="panel-walnut" aria-selected="true" tabindex="0">
+              <span class="stage-op mono">serve</span>
+              <span class="stage-name">Walnutech AI</span>
+              <span class="stage-date mono">2026 – now</span>
+              <span class="stage-status" aria-hidden="true"></span>
+            </button>
+          </div>
+
+          <div class="dag-panels">
+            <article class="panel" role="tabpanel" id="panel-jss" aria-labelledby="tab-jss" hidden>
+              <header class="panel-head">
+                <div>
+                  <h3>Bachelor of Engineering</h3>
+                  <p class="panel-org">JSS Science and Technology University · Mysore, India</p>
                 </div>
-              </div>
-              <div class="flex-grow-1">
-                <h6 class="mb-0">
-                  <a href="https://www.linkedin.com/in/saurabh-ladhe" target="_blank" class="name-link">Saurabh Ladhe</a>
-                </h6>
-                <small class="text-muted mb-1 d-block">Data/Platform Engineering Expert</small>
-                <small class="text-muted">January 3, 2025, Saurabh managed Manvith directly</small>
-              </div>
-            </div>
-            <p class="text-light">"I had the pleasure of mentoring Manvith during his Data Engineering Internship at Plymouth Rock Assurance, and I was consistently impressed by his rapid learning and proactive approach. Manvith absorbed new concepts and technologies with remarkable speed, becoming proficient in our data engineering stack. He adeptly conducted ad-hoc analyses, which directly contributed to identifying and resolving several data quality issues. His ability to translate legacy SAS code into Python was crucial for modernizing and migrating our processes to AWS. Manvith also played a key role in optimizing data pipelines, improving efficiency and performance. He displayed a strong commitment to data quality, proactively identifying and resolving issues through effective collaboration with multiple teams. Manvith is a highly motivated and talented individual with a promising future in the data field. I highly recommend Manvith for any data analytics and engineering role and I am confident he will continue to achieve great things."</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-md-6 recommendation-card" data-card="2">
-        <div class="card h-100" style="background-color: #1e1e1e; border: 1px solid #333;">
-          <div class="card-body">
-            <div class="d-flex align-items-start mb-3">
-              <div class="profile-pic me-3">
-                LV
-                <div class="linkedin-icon">
-                  <span class="linkedin-logo">in</span>
-                </div>
-              </div>
-              <div class="flex-grow-1">
-                <h6 class="mb-0">
-                  <a href="https://www.linkedin.com/in/lalithambiga-v-425659156" target="_blank" class="name-link">Lalithambiga V</a>
-                </h6>
-                <small class="text-muted mb-1 d-block">Senior Software Engineer at Ford Motors</small>
-                <small class="text-muted">April 4, 2023, Lalithambiga was senior to Manvith but didn't manage Manvith directly</small>
-              </div>
-            </div>
-            <p class="text-light">"He is an excellent person who welcomes suggestions & ideas from others and try to keep improvising him by putting his own ideas on the same. Definitely I believe he has a bright future and my recommendation for him would be a small token of motivation for the same 😊"</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Arrows -->
-    <button class="carousel-arrow left-arrow" onclick="prevRecommendation()">
-      <i class="bi bi-chevron-left"></i>
-    </button>
-    <button class="carousel-arrow right-arrow" onclick="nextRecommendation()">
-      <i class="bi bi-chevron-right"></i>
-    </button>
-
-    <!-- Dots -->
-    <div class="carousel-dots text-center mt-4">
-      <span class="dot active" onclick="goToSlide(0)"></span>
-      <span class="dot" onclick="goToSlide(1)"></span>
-      <span class="dot" onclick="goToSlide(2)"></span>
-    </div>
-  </div>
-</section>
-
-<style>
-/* Profile image with LinkedIn logo */
-.profile-pic {
-  width: 48px;
-  height: 48px;
-  background-color: #2c2c2c;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: white;
-  font-size: 16px;
-  position: relative;
-  flex-shrink: 0;
-  overflow: visible; /*  allow LinkedIn logo to overflow */
-}
-
-.linkedin-icon {
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  bottom: -6px;  /*  more pronounced */
-  right: -6px;   /*  more pronounced */
-  background-color: #0A66C2;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  z-index: 2;
-  transform: scale(1.1);
-}
-
-.linkedin-logo {
-  color: white;
-  font-weight: bold;
-  font-size: 12px;
-  font-family: Arial, sans-serif;
-  letter-spacing: -0.5px;
-}
-
-/* Cards */
-.carousel-container {
-  position: relative;
-  overflow: hidden;
-}
-
-.recommendation-card {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  position: relative;
-}
-
-.recommendation-card.show {
-  display: block;
-  opacity: 1;
-}
-
-.recommendation-card.show.first {
-  order: 1;
-}
-
-.recommendation-card.show.second {
-  order: 2;
-}
-
-/* Text tweaks */
-.name-link {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.name-link:hover {
-  color: #0A66C2;
-}
-
-.text-muted {
-  color: #aaa !important;
-}
-
-/* Arrows */
-.carousel-arrow {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  border: none;
-  background: rgba(255,255,255,0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
-.carousel-arrow:hover {
-  background: rgba(255,255,255,0.25);
-}
-
-.left-arrow {
-  left: -50px;
-}
-
-.right-arrow {
-  right: -50px;
-}
-
-.carousel-arrow i {
-  font-size: 1.5rem;
-  color: white;
-}
-
-/* Dots */
-.carousel-dots .dot {
-  height: 12px;
-  width: 12px;
-  margin: 0 6px;
-  background-color: #555;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
-.carousel-dots .dot.active {
-  background-color: #0A66C2;
-}
-
-.carousel-dots .dot:hover {
-  background-color: #0A66C2;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .left-arrow {
-    left: -30px;
-  }
-  .right-arrow {
-    right: -30px;
-  }
-  .carousel-arrow {
-    width: 36px;
-    height: 36px;
-  }
-  .carousel-arrow i {
-    font-size: 1.2rem;
-  }
-}
-</style>
-
-<script>
-const cards = document.querySelectorAll('.recommendation-card');
-const dots = document.querySelectorAll('.dot');
-const totalCards = cards.length;
-
-// Define the sequences for showing cards in pairs with proper order
-const sequences = [
-  {first: 0, second: 1}, // Show Jamie first, then Saurabh (1,2)
-  {first: 1, second: 2}, // Show Saurabh first, then Lalithambiga (2,3)
-  {first: 2, second: 0}  // Show Lalithambiga first, then Jamie (3,1)
-];
-
-let currentIndex = 0;
-
-function showCurrentSlide() {
-  // Hide all cards first and remove order classes
-  cards.forEach(card => {
-    card.classList.remove('show', 'first', 'second');
-    card.style.display = 'none';
-  });
-
-  // Show the current pair of cards with proper order
-  const {first, second} = sequences[currentIndex];
-  
-  if (cards[first]) {
-    cards[first].style.display = 'block';
-    cards[first].classList.add('show', 'first');
-    cards[first].offsetHeight; // Force reflow
-  }
-  
-  if (cards[second]) {
-    cards[second].style.display = 'block';
-    cards[second].classList.add('show', 'second');
-    cards[second].offsetHeight; // Force reflow
-  }
-
-  // Update dots
-  dots.forEach(dot => dot.classList.remove('active'));
-  if (dots[currentIndex]) {
-    dots[currentIndex].classList.add('active');
-  }
-}
-
-function nextRecommendation() {
-  currentIndex = (currentIndex + 1) % sequences.length;
-  showCurrentSlide();
-}
-
-function prevRecommendation() {
-  currentIndex = (currentIndex - 1 + sequences.length) % sequences.length;
-  showCurrentSlide();
-}
-
-function goToSlide(index) {
-  if (index >= 0 && index < sequences.length) {
-    currentIndex = index;
-    showCurrentSlide();
-  }
-}
-
-// Initialize carousel when page loads
-document.addEventListener('DOMContentLoaded', function() {
-  showCurrentSlide();
-});
-</script>
-
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>About</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpeg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Data Engineer</h3>
-            <p class="fst-italic">Data engineer with 5+ years architecting multi-modal pipelines, data-quality frameworks, and lineage-tracked infrastructure in regulated environments.</p>
-            <div class="row">
-              <div class="col-lg-6">
+                <p class="panel-date mono">Aug 2016 – Jun 2020</p>
+              </header>
+              <p class="log mono"><span>[ingest]</span> loaded fundamentals: statistics, probability, linear algebra, calculus, C programming</p>
+              <div class="subrole">
+                <h4>Data Analyst Intern · Nuetech Steels <span class="mono">Jan 2019 – Dec 2019</span></h4>
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+1 617-318-8506</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Phoenix, AZ (Open to relocation)</span></li>
+                  <li>Optimized SQL queries and data models on sales and inventory data, cutting data retrieval time by <b>30%</b>.</li>
+                  <li>Built Power BI dashboards with advanced DAX on raw material supply trends, improving steel demand forecasting by <b>20%</b>.</li>
+                  <li>Designed Python ETL to pull steel sales data from multiple sources in S3, reducing data handling time by <b>25%</b>.</li>
                 </ul>
               </div>
-              <div class="col-lg-6">
+              <ul class="tags"><li>SQL</li><li>Power BI</li><li>Python</li><li>Statistics</li></ul>
+            </article>
+
+            <article class="panel" role="tabpanel" id="panel-accenture" aria-labelledby="tab-accenture" hidden>
+              <header class="panel-head">
+                <div>
+                  <h3>Data Analyst → Senior Data Analyst</h3>
+                  <p class="panel-org">The Walt Disney Company (via Accenture Solutions) · Bangalore, India</p>
+                </div>
+                <p class="panel-date mono">Jan 2020 – Jan 2023</p>
+              </header>
+              <ul class="metrics">
+                <li><b>5M+</b><span>records consolidated across 6 Disney apps</span></li>
+                <li><b>−80%</b><span>manual booking validation</span></li>
+                <li><b>+40%</b><span>QuickSight metric refresh speed</span></li>
+              </ul>
+              <div class="subrole">
+                <h4>Senior Data Analyst <span class="mono">Jun 2022 – Jan 2023</span></h4>
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>manvith18@gmail.com</span></li>
+                  <li>Ran complex SQL analysis on customer behavior across six Disney applications, consolidating 5M+ records into insights for stakeholders.</li>
+                  <li>Developed event-driven pipelines with AWS EventBridge and Lambda to process real-time booking and system logs from S3, enabling anomaly detection.</li>
+                  <li>Led a cross-functional team of 8 to deliver a high-stakes booking engine on schedule for record visitor volumes.</li>
+                  <li>Automated park-pass booking validation with Python and SQL triggers, reducing manual processes by 80%.</li>
                 </ul>
               </div>
-            </div>
-            <p>
-              <ul>
-                  <li><i class="bi bi-chevron-right"></i>Build production ETL pipelines in Python, SQL, PostgreSQL and Airflow, from ingestion to research-ready datasets</li>
-                  <li><i class="bi bi-chevron-right"></i>Design data-quality and validation frameworks that keep regulated systems audit-ready</li>
-                  <li><i class="bi bi-chevron-right"></i>Scale workloads on AWS (S3, Redshift, Glue, ECS Fargate, Step Functions) while cutting runtime and cloud cost</li>
-                  <li><i class="bi bi-chevron-right"></i>Ground LLM features with RAG knowledge bases and deterministic validation to eliminate hallucinated data</li>
-                  <li><i class="bi bi-chevron-right"></i>Author AI-native dev tooling (Claude Code agent skills) that catches data-integrity risks before release</li>
+              <div class="subrole">
+                <h4>Data Analyst <span class="mono">Jan 2020 – May 2022</span></h4>
+                <ul>
+                  <li>Analyzed nearly half a million booking records with SQL to triage high-priority requests.</li>
+                  <li>Built real-time dashboards for peak load performance, keeping zero downtime through critical ticket booking windows.</li>
+                  <li>Wired Redshift directly into Amazon QuickSight dashboards, boosting metric refresh speeds by 40%.</li>
+                  <li>Deployed CI/CD workflows on AWS, rolling out critical updates within 30 minutes after park close.</li>
+                </ul>
+              </div>
+              <ul class="tags"><li>SQL</li><li>Python</li><li>AWS Lambda</li><li>EventBridge</li><li>Redshift</li><li>QuickSight</li><li>Splunk</li></ul>
+            </article>
+
+            <article class="panel" role="tabpanel" id="panel-neu" aria-labelledby="tab-neu" hidden>
+              <header class="panel-head">
+                <div>
+                  <h3>M.S. Data Analytics Engineering</h3>
+                  <p class="panel-org">Northeastern University · Boston, MA</p>
+                </div>
+                <p class="panel-date mono">Jan 2023 – May 2025</p>
+              </header>
+              <ul class="metrics">
+                <li><b>3.9</b><span>/ 4.0 GPA</span></li>
+                <li><b>9</b><span>public projects across DE, ML and viz</span></li>
               </ul>
-            </p>
+              <p class="log mono"><span>[enrich]</span> joined coursework: database management, data warehousing, data mining, machine learning, MLOps, statistical methods, data visualization</p>
+              <ul class="tags"><li>Data Warehousing</li><li>MLOps</li><li>Machine Learning</li><li>Tableau</li><li>Spark</li></ul>
+            </article>
+
+            <article class="panel" role="tabpanel" id="panel-prac" aria-labelledby="tab-prac" hidden>
+              <header class="panel-head">
+                <div>
+                  <h3>Data Engineer Co-op</h3>
+                  <p class="panel-org">Plymouth Rock Assurance · Boston, MA</p>
+                </div>
+                <p class="panel-date mono">Jul 2024 – Jan 2025</p>
+              </header>
+              <ul class="metrics">
+                <li><b>−77%</b><span>pipeline runtime after SAS → Python</span></li>
+                <li><b>300M+</b><span>rows of vendor data processed</span></li>
+                <li><b>−80%</b><span>cloud compute cost</span></li>
+              </ul>
+              <ul>
+                <li>Migrated legacy SAS pipelines to Python with Polars and multithreading, converting SAS datasets to partitioned Parquet on S3.</li>
+                <li>Processed 300M+ rows of home insurance vendor data on Redshift and S3, and built data validation frameworks to guard quality.</li>
+                <li>Orchestrated end-to-end ETL with ECS Fargate and Step Functions, automating multi-source ingestion and improving operational efficiency by 60%.</li>
+                <li>Caught transformation errors corrupting quarterly records, added schema validation safeguards and reprocessed the affected datasets.</li>
+              </ul>
+              <ul class="tags"><li>Python</li><li>Polars</li><li>Parquet</li><li>S3</li><li>Redshift</li><li>ECS Fargate</li><li>Step Functions</li></ul>
+            </article>
+
+            <article class="panel" role="tabpanel" id="panel-cdf" aria-labelledby="tab-cdf" hidden>
+              <header class="panel-head">
+                <div>
+                  <h3>Data Engineer</h3>
+                  <p class="panel-org">Community Dreams Foundation · Remote</p>
+                </div>
+                <p class="panel-date mono">Jun 2025 – Jun 2026</p>
+              </header>
+              <ul class="metrics">
+                <li><b>50+</b><span>automated data-quality rules</span></li>
+                <li><b>9</b><span>table Postgres model with full lineage</span></li>
+                <li><b>0</b><span>production incidents</span></li>
+              </ul>
+              <ul>
+                <li>Architected ETL pipelines and a 9-table Postgres model with transactional batch numbering, foreign keys and indexing for a food-safety SaaS, giving full lineage across FDA-compliant worksheet outputs.</li>
+                <li>Built 9 JSON knowledge libraries as a RAG knowledge base, grounding Claude's hazard extraction across 10+ food products for consistent, traceable outputs.</li>
+                <li>Automated 50+ Python validation rules against JSON Schema definitions to catch structural regressions before deploy, keeping the system audit-ready.</li>
+              </ul>
+              <ul class="tags"><li>PostgreSQL</li><li>Python</li><li>JSON Schema</li><li>RAG</li><li>Claude</li></ul>
+            </article>
+
+            <article class="panel" role="tabpanel" id="panel-walnut" aria-labelledby="tab-walnut">
+              <header class="panel-head">
+                <div>
+                  <h3>Data Engineer</h3>
+                  <p class="panel-org">Walnutech AI · Chandler, AZ</p>
+                </div>
+                <p class="panel-date mono">Apr 2026 – Present</p>
+              </header>
+              <ul class="metrics">
+                <li><b>76% → &lt;1%</b><span>field-extraction failure rate</span></li>
+                <li><b>2.3h → 10m</b><span>monthly crawl stage</span></li>
+                <li><b>15,000+</b><span>scholarships &amp; programs live</span></li>
+              </ul>
+              <ul>
+                <li>Built the scholarship and pre-college discovery pipeline from scratch in Python and PostgreSQL (Supabase), automating extraction, enrichment and ingestion for a live catalog.</li>
+                <li>Replaced hallucination-prone LLM extraction with deterministic logic validated against human-labeled records, so students see accurate, working links.</li>
+                <li>Re-engineered monthly ingestion to be idempotent and resumable with per-batch commits: no data loss on failure.</li>
+                <li>Authored AI-native dev tooling as Claude Code agent skills (a self-revision review loop and a 0–100 production-readiness audit) wired into the PR workflow.</li>
+              </ul>
+              <ul class="tags"><li>Python</li><li>PostgreSQL</li><li>Supabase</li><li>Claude Code</li><li>Data Quality</li></ul>
+            </article>
           </div>
         </div>
       </div>
-    </section><!-- End About Section -->
+    </section>
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>My Data Toolkit</p>
-        </div>
-           </div>
-           <img src="assets/img/icons.png" alt="Skills Icon" style="width: 100%; height: 100%; display: block; margin: 20px auto;">
-           </div>
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Summary</h3>
-            <div class="resume-item pb-0">
-              <h4>About</h4>
-              <p><em>Data engineer with 5+ years architecting multi-modal pipelines, data-quality frameworks, and lineage-tracked infrastructure in regulated environments. Proficient in Python, SQL, Airflow, and AWS, with a record of delivering research-ready datasets and validation systems that meet compliance standards.</em></p>
-              <ul>
-                <li>Phoenix, AZ (Open to relocation)</li>
-                <li>(617) 318-8506</li>
-                <li>manvith18@gmail.com</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Science - Data Analytics Engineering</h4>
-              <h5>Jan 2023 - May 2025</h5>
-              <p><em>Northeastern University, Boston, MA &middot; 3.9 / 4.0 GPA</em></p>
-              <p>Database Management, Data Visualization, Data Mining, Machine Learning, Statistical Methods, Machine Learning Operations(MLOps), Data Warehousing</p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Engineering</h4>
-              <h5>Aug 2016 - Jun 2020</h5>
-              <p><em>JSS Science and Technology University, Mysore, India</em></p>
-              <p>C Programming, Probability, Computational Mathematics, Statistics, Linear Algebra, Calculus</p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Data Engineer</h4>
-              <h5>Apr 2026 - Present</h5>
-              <p><em>Walnutech AI, Chandler, AZ</em></p>
-              <ul>
-                <li>Built the company's scholarship and pre-college discovery pipeline from scratch in Python and PostgreSQL (Supabase), automating extraction, enrichment, and ingestion to power a live catalog of 15,000+ scholarships and programs.</li>
-                <li>Cut a critical field-extraction failure rate from 76% to under 1% by replacing hallucination-prone LLM extraction with deterministic logic validated against human-labeled records.</li>
-                <li>Re-engineered the monthly ingestion job to be idempotent and resumable with per-batch commits, trimming the crawl stage from 2.3 hours to 10 minutes with no data loss on failures.</li>
-                <li>Authored AI-native dev tooling as Claude Code agent skills, a self-revision review loop and a 0 to 100 production-readiness audit, wired into the PR workflow to catch data-integrity and migration risks before release.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Data Engineer</h4>
-              <h5>Jun 2025 - Jun 2026</h5>
-              <p><em>Community Dreams Foundation, Remote, AZ</em></p>
-              <ul>
-                <li>Architected end-to-end ETL pipelines and a 9-table Postgres data model with transactional batch-numbering, foreign keys, and indexing for a food-safety SaaS, enabling full data lineage across FDA-compliant worksheet outputs.</li>
-                <li>Developed 9 JSON knowledge libraries as a RAG knowledge base, grounding Claude's hazard extraction across 10+ food products and producing consistent, traceable outputs.</li>
-                <li>Automated 50+ Python data-quality validation rules against JSON Schema definitions to catch structural regressions before deploying, keeping the system audit-ready with zero production incidents.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Data Engineer Co-op</h4>
-              <h5>Jul 2024 - Jan 2025</h5>
-              <p><em>Plymouth Rock Assurance, Boston, MA</em></p>
-              <ul>
-                <li>Migrated legacy SAS pipelines to Python using Polars and multithreading, converting SAS datasets to partitioned Parquet on S3 and reducing pipeline runtime by 77%.</li>
-                <li>Processed 300M+ rows of home insurance vendor data on AWS Redshift and S3 with Python and Polars, saving 80% on cloud compute costs, and built data validation frameworks.</li>
-                <li>Orchestrated end-to-end ETL workflows using AWS ECS Fargate and Step Functions, automating multi-source vendor ingestion and improving operational efficiency by 60%.</li>
-                <li>Resolved critical transformation errors corrupting quarterly records by adding schema validation safeguards and reprocessing affected datasets.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Senior Data Analyst</h4>
-              <h5>Jun 2022 - Jan 2023</h5>
-              <p><em>The Walt Disney Company (via Accenture Solutions), Bangalore, India</em></p>
-              <ul>
-                <li>Conducted complex SQL ad-hoc analysis on customer behavior across six Disney applications, consolidating 5M+ records into actionable insights for stakeholders.</li>
-                <li>Developed event-driven pipelines with AWS EventBridge and Lambda to process real-time booking and system logs from S3, enabling anomaly detection.</li>
-                <li>Led a cross-functional team of 8 to deliver a high-stakes booking engine on schedule for record visitor volumes.</li>
-                <li>Implemented automated park-pass booking validation using Python and SQL triggers, reducing manual processes by 80%.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Data Analyst</h4>
-              <h5>Jan 2020 - May 2022</h5>
-              <p><em>The Walt Disney Company (via Accenture Solutions), Bangalore, India</em></p>
-              <ul>
-                <li>Analyzed nearly half a million booking records with SQL to triage high-priority requests and speed up response times.</li>
-                <li>Built real-time dashboards to monitor peak load performance, ensuring zero downtime during crucial ticket booking windows.</li>
-                <li>Integrated Redshift as a direct source for Amazon QuickSight dashboards, boosting metric refresh speeds by 40%.</li>
-                <li>Deployed CI/CD workflows on AWS, rolling out critical updates within 30 mins after park-close.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Data Analyst Intern</h4>
-              <h5>Jan 2019 - Dec 2019</h5>
-              <p><em>Nuetech Steels, Bangalore, India</em></p>
-              <ul>
-                <li>Optimized SQL queries and data models to analyze large-scale sales and inventory datasets, reducing data retrieval time by 30% and enabling faster insight generation.</li>
-                <li>Constructed Power BI dashboards with advanced DAX highlighting raw material supply trends, improving steel demand forecasting by 20%.</li>
-                <li>Designed ETL processes in Python to extract steel sales data from multiple sources in S3, reducing data handling time by 25%.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-<section id="portfolio" class="portfolio section-bg">
-  <div class="container" data-aos="fade-up">
-
-    <div class="section-title">
-      <h2>Projects</h2>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-        <ul id="portfolio-flters">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">EDA</li>
-          <li data-filter=".filter-card">Machine Learning</li>
-          <li data-filter=".filter-web">Data Visualization</li>
+    <!-- ======= Impact marquee ======= -->
+    <section class="marquee" aria-label="Impact highlights">
+      <div class="marquee-track">
+        <ul class="marquee-list">
+          <li><b>76% → &lt;1%</b> extraction failures</li>
+          <li><b>2.3h → 10m</b> crawl runtime</li>
+          <li><b>−77%</b> pipeline runtime</li>
+          <li><b>300M+</b> rows processed</li>
+          <li><b>−80%</b> cloud compute</li>
+          <li><b>15,000+</b> records served live</li>
+          <li><b>50+</b> data-quality rules</li>
+          <li><b>0</b> production incidents</li>
+          <li><b>5M+</b> records analyzed</li>
+        </ul>
+        <ul class="marquee-list" aria-hidden="true">
+          <li><b>76% → &lt;1%</b> extraction failures</li>
+          <li><b>2.3h → 10m</b> crawl runtime</li>
+          <li><b>−77%</b> pipeline runtime</li>
+          <li><b>300M+</b> rows processed</li>
+          <li><b>−80%</b> cloud compute</li>
+          <li><b>15,000+</b> records served live</li>
+          <li><b>50+</b> data-quality rules</li>
+          <li><b>0</b> production incidents</li>
+          <li><b>5M+</b> records analyzed</li>
         </ul>
       </div>
+    </section>
+
+    <!-- ======= Stack ======= -->
+    <section class="section" id="stack">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">// 02 · stack</p>
+          <h2>Tools I reach for.</h2>
+          <p class="section-sub">Hover to light them up.</p>
+        </div>
+
+        <div class="stack-groups">
+          <div class="stack-group">
+            <h3 class="mono">languages &amp; storage</h3>
+            <ul class="logos">
+              <li style="--brand:#3776AB;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/python.svg)"><span class="logo-glyph"></span>Python</li>
+              <li style="--brand:#4169E1;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/postgresql.svg)"><span class="logo-glyph"></span>PostgreSQL</li>
+              <li style="--brand:#3FCF8E;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/supabase.svg)"><span class="logo-glyph"></span>Supabase</li>
+              <li style="--brand:#4479A1;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/mysql.svg)"><span class="logo-glyph"></span>MySQL</li>
+              <li style="--brand:#47A248;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/mongodb.svg)"><span class="logo-glyph"></span>MongoDB</li>
+              <li style="--brand:#29B5E8;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/snowflake.svg)"><span class="logo-glyph"></span>Snowflake</li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3 class="mono">processing &amp; orchestration</h3>
+            <ul class="logos">
+              <li style="--brand:#017CEE;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/apacheairflow.svg)"><span class="logo-glyph"></span>Airflow</li>
+              <li style="--brand:#E25A1C;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/apachespark.svg)"><span class="logo-glyph"></span>PySpark</li>
+              <li style="--brand:#CD792C;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/polars.svg)"><span class="logo-glyph"></span>Polars</li>
+              <li style="--brand:#E70488;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/pandas.svg)"><span class="logo-glyph"></span>Pandas</li>
+              <li style="--brand:#2496ED;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/docker.svg)"><span class="logo-glyph"></span>Docker</li>
+              <li style="--brand:#F05032;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/git.svg)"><span class="logo-glyph"></span>Git</li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3 class="mono">cloud</h3>
+            <ul class="logos">
+              <li style="--brand:#FF9900;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/amazonwebservices.svg)"><span class="logo-glyph"></span>AWS</li>
+              <li style="--brand:#569A31;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/amazons3.svg)"><span class="logo-glyph"></span>S3</li>
+              <li style="--brand:#8C4FFF;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/amazonredshift.svg)"><span class="logo-glyph"></span>Redshift</li>
+              <li style="--brand:#FF9900;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/awslambda.svg)"><span class="logo-glyph"></span>Lambda</li>
+              <li style="--brand:#669DF6;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/googlebigquery.svg)"><span class="logo-glyph"></span>BigQuery</li>
+              <li style="--brand:#4285F4;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/googlecloud.svg)"><span class="logo-glyph"></span>GCP</li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3 class="mono">bi &amp; ai</h3>
+            <ul class="logos">
+              <li style="--brand:#E97627;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/tableau.svg)"><span class="logo-glyph"></span>Tableau</li>
+              <li style="--brand:#F2C811;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@11/icons/powerbi.svg)"><span class="logo-glyph"></span>Power BI</li>
+              <li style="--brand:#D97757;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/claude.svg)"><span class="logo-glyph"></span>Claude</li>
+              <li style="--brand:#2088FF;--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13/icons/githubactions.svg)"><span class="logo-glyph"></span>GH Actions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Projects ======= -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">// 03 · projects</p>
+          <h2>Things I've built on the side.</h2>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">all</button>
+          <button type="button" class="chip" data-filter="de" aria-pressed="false">data engineering</button>
+          <button type="button" class="chip" data-filter="ml" aria-pressed="false">machine learning</button>
+          <button type="button" class="chip" data-filter="viz" aria-pressed="false">visualization</button>
+          <button type="button" class="chip" data-filter="eda" aria-pressed="false">eda</button>
+        </div>
+
+        <div class="projects">
+          <a class="project" data-tags="de" href="https://github.com/manvith1604/Realtime-Data-Streaming-using-Airflow-Spark" target="_blank" rel="noopener">
+            <div class="project-img"><img loading="lazy" src="https://github.com/airscholar/e2e-data-engineering/blob/main/Data%20engineering%20architecture.png?raw=true" alt="Streaming architecture diagram"></div>
+            <div class="project-body">
+              <h3>Realtime Data Streaming</h3>
+              <p>End-to-end streaming pipeline: Airflow → Kafka → Spark → Cassandra, fully containerized with Docker.</p>
+              <ul class="tags"><li>Airflow</li><li>Kafka</li><li>Spark</li><li>Docker</li></ul>
+            </div>
+          </a>
+          <a class="project" data-tags="eda de" href="https://github.com/manvith1604/Exploratory-Data-Analysis-on-Olist-E-commerce-Dataset" target="_blank" rel="noopener">
+            <div class="project-img"><img loading="lazy" src="assets/img/274393673-b8ccab78-2d1e-4ad8-8088-192ad0bd68e1.png" alt="Olist database schema"></div>
+            <div class="project-body">
+              <h3>Olist E-commerce Database</h3>
+              <p>Relational database for a Brazilian marketplace (customers, sellers, orders, payments, geolocation) plus SQL analysis.</p>
+              <ul class="tags"><li>SQL</li><li>Data Modeling</li><li>EDA</li></ul>
+            </div>
+          </a>
+          <a class="project" data-tags="ml" href="https://github.com/manvith1604/World-Econ-Growth-Forecast" target="_blank" rel="noopener">
+            <div class="project-img"><img loading="lazy" src="https://advisor.visualcapitalist.com/wp-content/uploads/2023/02/2023-Global-Growth-Forecasts.jpeg" alt="Global growth forecast map"></div>
+            <div class="project-body">
+              <h3>World Economic Growth Forecast</h3>
+              <p>Forecasting economic trends from IMF financial datasets.</p>
+              <ul class="tags"><li>Python</li><li>Forecasting</li></ul>
+            </div>
+          </a>
+          <a class="project" data-tags="ml" href="https://github.com/manvith1604/NYC-Taxi-Fare-Estimation-using-Regression" target="_blank" rel="noopener">
+            <div class="project-img"><img loading="lazy" src="assets/img/nyc_taxi.png" alt="NYC taxi fare model"></div>
+            <div class="project-body">
+              <h3>NYC Taxi Fare Estimation</h3>
+              <p>Regression models predicting fares from trip distance and pickup/drop-off times on TLC trip data.</p>
+              <ul class="tags"><li>Regression</li><li>Python</li></ul>
+            </div>
+          </a>
+          <a class="project" data-tags="ml" href="https://github.com/manvith1604/Running-Consumer-Segmentation-using-clustering" target="_blank" rel="noopener">
+            <div class="project-img"><img loading="lazy" src="assets/img/291793729-dcf7a1fc-f253-49a7-899b-19fc7b6f2cb7.png" alt="Consumer clusters"></div>
+            <div class="project-body">
+              <h3>Running Consumer Segmentation</h3>
+              <p>Clustering survey data to advise a running apparel brand on product and marketing strategy.</p>
+              <ul class="tags"><li>Clustering</li><li>Unsupervised</li></ul>
+            </div>
+          </a>
+          <a class="project" data-tags="ml" href="https://github.com/manvith1604/On-body-Localization-of-Wearable-Devices" target="_blank" rel="noopener">
+            <div class="project-img"><img loading="lazy" src="assets/img/sensors-23-09498-g001.webp" alt="Wearable sensor positions"></div>
+            <div class="project-body">
+              <h3>On-body Localization of Wearables</h3>
+              <p>Classifying where a device is worn from accelerometer time series across 15 subjects.</p>
+              <ul class="tags"><li>Time Series</li><li>Classification</li></ul>
+            </div>
+          </a>
+          <a class="project" data-tags="viz eda" href="https://github.com/manvith1604/Boston-Airbnb-Dashboard" target="_blank" rel="noopener">
+            <div class="project-img"><img loading="lazy" src="assets/img/68747470733a2f2f7075626c69632e7461626c6561752e636f6d2f7374617469632f696d616765732f50722f50726f6a6563742d325f416972626e625f47726f75702d392f44617368626f617264312f315f7273732e706e67.png" alt="Boston Airbnb Tableau dashboard"></div>
+            <div class="project-body">
+              <h3>Boston Airbnb Dashboard</h3>
+              <p>Interactive Tableau dashboard on Boston listings, pricing and neighborhoods.</p>
+              <ul class="tags"><li>Tableau</li></ul>
+            </div>
+          </a>
+          <a class="project" data-tags="viz eda" href="https://github.com/manvith1604/MBTA-Subway-Analysis" target="_blank" rel="noopener">
+            <div class="project-img"><img loading="lazy" src="assets/img/291786981-93c30c43-771b-4242-b26d-372049e7add7.png" alt="MBTA subway dashboard"></div>
+            <div class="project-body">
+              <h3>MBTA Subway Analysis</h3>
+              <p>Ridership and trip patterns across Boston's red, orange, green and blue lines.</p>
+              <ul class="tags"><li>Tableau</li><li>EDA</li></ul>
+            </div>
+          </a>
+          <a class="project" data-tags="viz eda" href="https://github.com/manvith1604/Bike_share_analysis-Google_Data_Analytics_Case_Study" target="_blank" rel="noopener">
+            <div class="project-img"><img loading="lazy" src="assets/img/bike_share.png" alt="Bike share analysis chart"></div>
+            <div class="project-body">
+              <h3>Bike Share: Casual vs Members</h3>
+              <p>Merging, cleaning and analyzing 2022 Divvy trip data in SQL for the Google Data Analytics case study.</p>
+              <ul class="tags"><li>SQL</li><li>Tableau</li></ul>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Recommendations ======= -->
+    <section class="section" id="words">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">// 04 · recommendations</p>
+          <h2>What people I've worked with say.</h2>
+        </div>
+
+        <div class="quotes">
+          <figure class="quote">
+            <blockquote>“Manvith played a pivotal role in modernizing data pipelines during his time at Plymouth. He was instrumental in driving cloud migration efforts and enhancing pipeline accuracy. I was impressed with Manvith's ability to optimize processes which significantly reduced execution times and brought down cloud compute costs. His problem-solving mindset, natural curiosity, and ability to work independently stood out throughout his Co-op.”</blockquote>
+            <figcaption>
+              <span class="initials" aria-hidden="true">JW</span>
+              <span><a href="https://www.linkedin.com/in/jamiemwarner" target="_blank" rel="noopener">Jamie Warner</a><small>Data Science &amp; Analytics Leader · managed Manvith directly</small></span>
+            </figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>“Manvith absorbed new concepts and technologies with remarkable speed, becoming proficient in our data engineering stack. … His ability to translate legacy SAS code into Python was crucial for modernizing and migrating our processes to AWS. … He displayed a strong commitment to data quality, proactively identifying and resolving issues through effective collaboration with multiple teams.”</blockquote>
+            <figcaption>
+              <span class="initials" aria-hidden="true">SL</span>
+              <span><a href="https://www.linkedin.com/in/saurabh-ladhe" target="_blank" rel="noopener">Saurabh Ladhe</a><small>Data/Platform Engineering Expert · managed Manvith directly</small></span>
+            </figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>“He is an excellent person who welcomes suggestions &amp; ideas from others and try to keep improvising him by putting his own ideas on the same. Definitely I believe he has a bright future and my recommendation for him would be a small token of motivation for the same 😊”</blockquote>
+            <figcaption>
+              <span class="initials" aria-hidden="true">LV</span>
+              <span><a href="https://www.linkedin.com/in/lalithambiga-v-425659156" target="_blank" rel="noopener">Lalithambiga V</a><small>Senior Software Engineer, Ford Motors · senior colleague</small></span>
+            </figcaption>
+          </figure>
+        </div>
+        <p class="more-link"><a href="https://www.linkedin.com/in/manvith-b-y/" target="_blank" rel="noopener">Read the full recommendations on LinkedIn →</a></p>
+      </div>
+    </section>
+
+    <!-- ======= Certifications ======= -->
+    <section class="section" id="certs">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">// 05 · certifications</p>
+          <h2>Credentials.</h2>
+        </div>
+        <ul class="certs">
+          <li><a href="https://www.credly.com/badges/50b48b45-522e-46f7-bec1-b39f6e40b37b" target="_blank" rel="noopener"><img src="assets/img/AWS_logo.png" alt="" loading="lazy"><span>AWS Certified Cloud Practitioner</span><small class="mono">Amazon Web Services</small></a></li>
+          <li><a href="https://www.credly.com/badges/8f20d65a-39bf-4dee-b59f-437af8705f6e" target="_blank" rel="noopener"><img src="assets/img/GCC_badge_DA_1000x1000.png" alt="" loading="lazy"><span>Google Data Analytics Professional</span><small class="mono">Google</small></a></li>
+          <li><div><span class="cert-mark mono" aria-hidden="true">DE</span><span>Data Engineering Bootcamp</span><small class="mono">DataExpert.io</small></div></li>
+          <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/X2YZGG6LPYW5" target="_blank" rel="noopener"><img src="assets/img/images.png" alt="" loading="lazy"><span>Object Oriented Java: Data Structures &amp; Algorithms</span><small class="mono">Coursera</small></a></li>
+          <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/S5VC9H9HZ6RA" target="_blank" rel="noopener"><img src="assets/img/images.png" alt="" loading="lazy"><span>Java Programming &amp; Software Engineering Fundamentals</span><small class="mono">Coursera</small></a></li>
+          <li><a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-3647dfcc-cff3-4b7c-b8e7-1489ae00f452.pdf" target="_blank" rel="noopener"><img src="assets/img/172834_default-meta-image-v2.png" alt="" loading="lazy"><span>Java Programming Masterclass (Java 11 &amp; 17)</span><small class="mono">Udemy</small></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======= Contact ======= -->
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <p class="eyebrow">// 06 · sink</p>
+        <h2 class="contact-title">Every pipeline needs<br>a destination.</h2>
+        <p class="section-sub">Hiring for data engineering, want to talk pipelines, or just want to say hi? My inbox is idempotent, so send as many times as you like.</p>
+        <a class="contact-email" href="mailto:manvith18@gmail.com">manvith18@gmail.com <span aria-hidden="true">↗</span></a>
+        <div class="cta-row">
+          <a class="btn" href="assets/img/Manvith_Belame_Yogesh_Resume.pdf" target="_blank" rel="noopener">Download résumé</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/manvith-b-y/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/manvith1604" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="tel:+16173188506">+1 617-318-8506</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner mono">
+      <span>© <span id="year">2026</span> Manvith Belame Yogesh</span>
+      <span>hand-built · no frameworks · served from GitHub Pages</span>
     </div>
+  </footer>
 
-    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-        <div class="portfolio-wrap">
-          <img src="https://advisor.visualcapitalist.com/wp-content/uploads/2023/02/2023-Global-Growth-Forecasts.jpeg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>World-Econ-Growth-Forecast</h4>
-            <p>EDA</p>
-            <div class="portfolio-links">
-              <a href="https://advisor.visualcapitalist.com/wp-content/uploads/2023/02/2023-Global-Growth-Forecasts.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="World-Econ-Growth-Forecast"><i class="bx bx-plus"></i></a>
-              <a href="https://github.com/manvith1604/World-Econ-Growth-Forecast" target="_blank"><i class="bx bxl-github"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-        <div class="portfolio-wrap">
-          <img src="https://github.com/airscholar/e2e-data-engineering/blob/main/Data%20engineering%20architecture.png?raw=true" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Realtime-Data-Streaming-using-Airflow-Spark</h4>
-            <p>Data Engineering</p>
-            <div class="portfolio-links">
-              <a href="https://github.com/airscholar/e2e-data-engineering/blob/main/Data%20engineering%20architecture.png?raw=true" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Realtime Data Streaming using Apache Spark"><i class="bx bx-plus"></i></a>
-              <a href="https://github.com/manvith1604/Realtime-Data-Streaming-using-Airflow-Spark" target="_blank"><i class="bx bxl-github"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web filter-app">
-        <div class="portfolio-wrap">
-          <img src="https://camo.githubusercontent.com/a834d0a3a5177e1101200bc563e5fda61e1bfa48d6e9d50984458adbeb1fd3b2/68747470733a2f2f7075626c69632e7461626c6561752e636f6d2f7374617469632f696d616765732f50722f50726f6a6563742d325f416972626e625f47726f75702d392f44617368626f617264312f315f7273732e706e67" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Boston-Airbnb-Dashboard</h4>
-            <p>Data Visualization</p>
-            <div class="portfolio-links">
-              <a href="assets/img/68747470733a2f2f7075626c69632e7461626c6561752e636f6d2f7374617469632f696d616765732f50722f50726f6a6563742d325f416972626e625f47726f75702d392f44617368626f617264312f315f7273732e706e67.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Boston Airbnb Dashboard"><i class="bx bx-plus"></i></a>
-              <a href="https://github.com/manvith1604/Boston-Airbnb-Dashboard" target="_blank"><i class="bx bxl-github"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <div class="portfolio-wrap">
-          <img src="assets/img/274393673-b8ccab78-2d1e-4ad8-8088-192ad0bd68e1.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Exploratory Data Analysis on Olist E-commerce Dataset</h4>
-            <p>EDA</p>
-            <div class="portfolio-links">
-              <a href="assets/img/274393673-b8ccab78-2d1e-4ad8-8088-192ad0bd68e1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Exploratory Data Analysis on Olist E-commerce Dataset"><i class="bx bx-plus"></i></a>
-              <a href="https://github.com/manvith1604/Exploratory-Data-Analysis-on-Olist-E-commerce-Dataset" target="_blank"><i class="bx bxl-github"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-        <div class="portfolio-wrap">
-          <img src="assets/img/291793729-dcf7a1fc-f253-49a7-899b-19fc7b6f2cb7.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Running Consumer Segmentation using clustering</h4>
-            <p>Machine Learning</p>
-            <div class="portfolio-links">
-              <a href="assets/img/291793729-dcf7a1fc-f253-49a7-899b-19fc7b6f2cb7.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Running Consumer Segmentation using clustering"><i class="bx bx-plus"></i></a>
-              <a href="https://github.com/manvith1604/Running-Consumer-Segmentation-using-clustering" target="_blank"><i class="bx bxl-github"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web filter-app">
-        <div class="portfolio-wrap">
-          <img src="assets/img/291786981-93c30c43-771b-4242-b26d-372049e7add7.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>MBTA Subway Analysis</h4>
-            <p>Data Visualization</p>
-            <div class="portfolio-links">
-              <a href="assets/img/291786981-93c30c43-771b-4242-b26d-372049e7add7.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="MBTA Subway Analysis"><i class="bx bx-plus"></i></a>
-              <a href="https://github.com/manvith1604/MBTA-Subway-Analysis" target="_blank"><i class="bx bxl-github"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-        <div class="portfolio-wrap">
-          <img src="assets/img/nyc_taxi.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>NYC Taxi Fare Estimation using Regression</h4>
-            <p>Machine Learning</p>
-            <div class="portfolio-links">
-              <a href="assets/img/nyc_taxi.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="NYC Taxi Fare Estimation using Regression"><i class="bx bx-plus"></i></a>
-              <a href="https://github.com/manvith1604/NYC-Taxi-Fare-Estimation-using-Regression" target="_blank"><i class="bx bxl-github"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-        <div class="portfolio-wrap">
-          <img src="assets/img/sensors-23-09498-g001.webp" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>On-body Localization of Wearable Devices</h4>
-            <p>Machine Learning</p>
-            <div class="portfolio-links">
-              <a href="assets/img/sensors-23-09498-g001.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="On-body Localization of Wearable Devices"><i class="bx bx-plus"></i></a>
-              <a href="https://github.com/manvith1604/On-body-Localization-of-Wearable-Devices" target="_blank"><i class="bx bxl-github"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web filter-app">
-        <div class="portfolio-wrap">
-          <img src="assets/img/bike_share.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Bike share analysis - Google Data Analytics Case Study</h4>
-            <p>Data Visualization</p>
-            <div class="portfolio-links">
-              <a href="assets/img/bike_share.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Bike share analysis - Google Data Analytics Case Study"><i class="bx bx-plus"></i></a>
-              <a href="https://github.com/manvith1604/Bike_share_analysis-Google_Data_Analytics_Case_Study" target="_blank"><i class="bx bxl-github"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-</section><!-- End Portfolio Section -->
-
-<!-- ======= Services Section ======= -->
-<section id="services" class="services">
-  <div class="container" data-aos="fade-up">
-
-    <div class="section-title">
-      <h2>Certifications</h2>
-      <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
-    </div>
-
-    <div class="row">
-      <div class="col-lg-4 col-md-6 mt-4" data-aos="fade-up">
-        <div class="icon-box" style="max-width: 70%;">
-           <a href="https://www.credly.com/badges/50b48b45-522e-46f7-bec1-b39f6e40b37b">
-            <img src="assets/img/AWS_logo.png" alt="Certification Image" class="img-fluid">
-           </a>
-          <h4><a href="https://www.credly.com/badges/50b48b45-522e-46f7-bec1-b39f6e40b37b">AWS Certified Cloud Practitioner</a></h4>
-          <p>I gained a comprehensive understanding of AWS cloud concepts, core services, security, architecture, pricing, and support, enabling me to effectively leverage AWS cloud solutions for various business needs.</p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mt-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="icon-box" style="max-width: 70%;">
-          <a href="https://www.credly.com/badges/8f20d65a-39bf-4dee-b59f-437af8705f6e">
-          <img src="assets/img/GCC_badge_DA_1000x1000.png" alt="Certification Image" class="img-fluid">
-          </a>
-          <h4><a href="https://www.credly.com/badges/8f20d65a-39bf-4dee-b59f-437af8705f6e">Google Data Analytics Professional</a></h4>
-          <p>I developed a solid foundation in data analysis, learning to gather, clean, analyze, and visualize data using tools like SQL, R, and Tableau, which equipped me with the skills to make data-driven decisions and provide actionable insights.</p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mt-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="icon-box" style="max-width: 70%;">
-          <a href="https://nbceskillindia.in/student-verification.php">
-          <img src="assets/img/Keonics_Logo.jpg" alt="Certification Image" class="img-fluid">
-          </a>
-          <h4><a href="https://nbceskillindia.in/student-verification.php">Diploma in Computer Application and Programming</a></h4>
-          <p>I acquired comprehensive knowledge of computer applications, programming languages, and software development practices. This included learning to code in languages such as Java, C++, and Python, understanding database management, and developing problem-solving skills essential for software development and IT roles.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-4 col-md-6 mt-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="icon-box" style="max-width: 70%;">
-          <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-3647dfcc-cff3-4b7c-b8e7-1489ae00f452.pdf">
-          <img src="assets/img/172834_default-meta-image-v2.png" alt="Certification Image" class="img-fluid">
-          </a>
-          <h4><a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-3647dfcc-cff3-4b7c-b8e7-1489ae00f452.pdf">Java Programming Masterclass covering Java 11 & Java 17</a></h4>
-          <p>I gained in-depth knowledge of Java programming, including the latest features introduced in Java 11 and Java 17. This course provided hands-on experience with object-oriented programming, data structures, algorithms, and building real-world applications, enhancing my skills in software development and problem-solving using Java.</p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mt-4" data-aos="fade-up" data-aos-delay="400">
-        <div class="icon-box" style="max-width: 70%;">
-          <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/S5VC9H9HZ6RA">
-          <img src="assets/img/images.png" alt="Certification Image" class="img-fluid">
-          </a>
-          <h4><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/S5VC9H9HZ6RA">Java Programming and Software Engineering Fundamentals Specialization</a></h4>
-          <p>I acquired comprehensive knowledge in Java programming and foundational software engineering principles. This specialization covered essential topics such as object-oriented programming, data structures, algorithms, version control, and software testing. Through hands-on projects, I developed practical skills in designing, implementing, and maintaining robust and efficient software applications.</p>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mt-4" data-aos="fade-up" data-aos-delay="500">
-        <div class="icon-box" style="max-width: 70%;">
-          <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/X2YZGG6LPYW5">
-            <img src="assets/img/images.png" alt="Certification Image" class="img-fluid">
-          </a>
-          <h4><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/X2YZGG6LPYW5">Object Oriented Java Programming: Data Structures and Algorithms Specialization</a></h4>
-          <p>I gained in-depth expertise in Java programming with a focus on object-oriented principles, data structures, and algorithms. This specialization equipped me with the skills to design and implement efficient data structures such as arrays, linked lists, stacks, queues, and trees. Additionally, I learned to develop and analyze algorithms for sorting, searching, and problem-solving, enhancing my ability to create optimized and scalable software solutions.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Services Section -->
-
-    
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Hey there! I'm always up for a good chat, whether it's about networking, brainstorming cool ideas, or exploring hiring opportunities. Shoot me a message and let's make awesome things happen together!</p>
-        </div>
-
-        <div class="row mt-1">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Phoenix, AZ 85210 (Open to relocation)</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                 <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=manvith18@gmail.com">manvith18@gmail.com</a></p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 617-318-8506</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Github pages won't allow for a POST request 🙃 You can always reach me on LinkedIn and email mentioned on the left" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="social-links">
-          <a href="https://www.linkedin.com/in/manvith-b-y/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/manvith1604" class="github" target="_blank"><i class="bx bxl-github"></i></a>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=manvith18@gmail.com" class="email"><i class="bx bx-envelope"></i></a>
-          <a href="assets/img/Manvith_Belame_Yogesh_Resume.pdf" class="resume" target="_blank"> 
-            <i class="bx bx-file"></i>
-          </a>
-      </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>Manvith Belame Yogesh</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        Designed by <a href="https://boottrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/site.js" defer></script>
 </body>
 
 </html>
