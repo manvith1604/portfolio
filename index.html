@@ -98,13 +98,15 @@
           </div>
         </div>
 
-        <!-- Memoji avatar: transparent video that rises out of its circle.
+        <!-- Memoji avatar: a silent transparent loop that turns to look at the cursor.
              site.js picks HEVC-with-alpha for Safari and VP9-with-alpha WebM elsewhere;
-             without JS (or with reduced motion) the poster frame shows instead. -->
+             while the cursor moves, it scrubs a 31-frame head-turn sprite (assets/img/avatar-sweep.webp).
+             Without JS (or with reduced motion) the poster frame shows instead. -->
         <div class="avatar" role="img" aria-label="Memoji avatar of Manvith">
           <div class="avatar-disc" aria-hidden="true"></div>
           <video class="avatar-video" muted loop playsinline preload="none" poster="assets/img/avatar-poster.png" aria-hidden="true"
                  data-webm="assets/img/avatar.webm" data-hevc="assets/img/avatar-hevc.mp4" width="360" height="360"></video>
+          <div class="avatar-sweep" aria-hidden="true"></div>
         </div>
       </div>
     </section>
