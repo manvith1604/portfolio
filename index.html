@@ -98,73 +98,13 @@
           </div>
         </div>
 
-        <!-- Illustrated avatar: blinks, follows the cursor, pops out of its circle.
-             To swap in a generated loop later, replace the <svg> with
-             <video src="assets/img/avatar.webm" autoplay muted loop playsinline></video> -->
-        <div class="avatar" role="img" aria-label="Illustrated avatar of Manvith">
+        <!-- Memoji avatar: transparent video that rises out of its circle.
+             site.js picks HEVC-with-alpha for Safari and VP9-with-alpha WebM elsewhere;
+             without JS (or with reduced motion) the poster frame shows instead. -->
+        <div class="avatar" role="img" aria-label="Memoji avatar of Manvith">
           <div class="avatar-disc" aria-hidden="true"></div>
-          <svg class="avatar-svg" viewBox="0 -40 320 360" aria-hidden="true">
-            <defs>
-              <clipPath id="avatar-clip">
-                <circle cx="160" cy="160" r="158" />
-                <rect x="0" y="-40" width="320" height="200" />
-              </clipPath>
-            </defs>
-            <g clip-path="url(#avatar-clip)">
-              <g class="av-body" transform="translate(-40 -100) scale(1.25)">
-                <!-- suit -->
-                <path class="av-suit" d="M40 330 C 46 262 92 232 160 229 C 228 232 274 262 280 330 Z" />
-                <!-- shirt -->
-                <path class="av-shirt" d="M134 229 L160 300 L186 229 Z" />
-                <path class="av-shirt" d="M134 229 L147 252 L160 240 Z" />
-                <path class="av-shirt" d="M186 229 L173 252 L160 240 Z" />
-                <!-- tie -->
-                <path class="av-tie" d="M154 240 L166 240 L163 252 L169 306 L160 318 L151 306 L157 252 Z" />
-                <!-- lapels -->
-                <path class="av-lapel" d="M130 230 L150 290 L140 262 L118 262 L128 250 Z" />
-                <path class="av-lapel" d="M190 230 L170 290 L180 262 L202 262 L192 250 Z" />
-                <!-- pin -->
-                <rect class="av-pin" x="196" y="270" width="10" height="10" rx="1.5" />
-                <path class="av-pin-n" d="M198.5 278 L198.5 272 L203.5 278 L203.5 272" />
-                <!-- neck -->
-                <path class="av-neck" d="M140 196 L140 232 C 150 240 170 240 180 232 L180 196 Z" />
-
-                <g class="av-head">
-                  <!-- ears -->
-                  <ellipse class="av-skin" cx="108" cy="148" rx="9" ry="14" />
-                  <ellipse class="av-skin" cx="212" cy="148" rx="9" ry="14" />
-                  <!-- face -->
-                  <ellipse class="av-skin" cx="160" cy="146" rx="52" ry="62" />
-                  <!-- beard -->
-                  <path class="av-beard" d="M109 138 C 108 186 132 216 160 218 C 188 216 212 186 211 138 L 206 140 C 206 162 198 178 187 183 C 175 188 145 188 133 183 C 122 178 114 162 114 140 Z" />
-                  <!-- mouth (open smile) -->
-                  <path class="av-mouth" d="M143 184 Q160 200 177 184 Z" />
-                  <path class="av-teeth" d="M145 185 Q160 192 175 185 Z" />
-                  <!-- moustache -->
-                  <path class="av-hair" d="M135 180 Q147 170 160 176 Q173 170 185 180 Q173 181 160 180 Q147 181 135 180 Z" />
-                  <!-- nose -->
-                  <path class="av-nose" d="M160 146 Q156 163 152 166 Q158 170 166 167" />
-                  <!-- hair -->
-                  <path class="av-hair" d="M107 134 C 100 100 114 72 146 60 C 178 49 214 60 219 94 C 221 110 217 124 212 134 C 209 118 200 106 186 102 C 166 98 140 102 124 106 C 115 111 110 121 107 134 Z" />
-                  <path class="av-hair-hi" d="M132 84 C 148 66 180 62 202 76 C 186 70 160 72 140 86 Z" />
-                  <!-- brows -->
-                  <g class="av-brows">
-                    <path class="av-brow" d="M128 126 Q140 119 152 125" />
-                    <path class="av-brow" d="M168 125 Q180 119 192 126" />
-                  </g>
-                  <!-- eyes -->
-                  <g class="av-eye">
-                    <ellipse class="av-white" cx="140" cy="141" rx="9" ry="6" />
-                    <circle class="av-pupil" cx="140" cy="141" r="4.4" />
-                  </g>
-                  <g class="av-eye">
-                    <ellipse class="av-white" cx="180" cy="141" rx="9" ry="6" />
-                    <circle class="av-pupil" cx="180" cy="141" r="4.4" />
-                  </g>
-                </g>
-              </g>
-            </g>
-          </svg>
+          <video class="avatar-video" muted loop playsinline preload="none" poster="assets/img/avatar-poster.png" aria-hidden="true"
+                 data-webm="assets/img/avatar.webm" data-hevc="assets/img/avatar-hevc.mp4" width="360" height="360"></video>
         </div>
       </div>
     </section>

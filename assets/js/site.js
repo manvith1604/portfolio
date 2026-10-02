@@ -176,26 +176,28 @@
     }
   }
 
-  /* ---------- Avatar: eyes follow the cursor ---------- */
-  var avatar = document.querySelector('.avatar');
-  if (avatar && !reduceMotion && window.matchMedia('(hover: hover)').matches) {
-    var pupils = toArray(avatar.querySelectorAll('.av-pupil'));
-    var pending = false, px = 0, py = 0;
-    window.addEventListener('pointermove', function (e) {
-      px = e.clientX; py = e.clientY;
-      if (pending) return;
-      pending = true;
-      requestAnimationFrame(function () {
-        pending = false;
-        var r = avatar.getBoundingClientRect();
-        var cx = r.left + r.width / 2, cy = r.top + r.height * 0.36;
-        var dx = px - cx, dy = py - cy;
-        var dist = Math.sqrt(dx * dx + dy * dy) || 1;
-        var k = Math.min(dist / 300, 1);
-        var tx = (dx / dist) * 3.2 * k, ty = (dy / dist) * 2 * k;
-        pupils.forEach(function (p) { p.style.transform = 'translate(' + tx + 'px,' + ty + 'px)'; });
-      });
-    }, { passive: true });
+  /* ---------- Avatar: transparent Memoji loop ---------- */
+  // Safari only renders transparency from HEVC-with-alpha; Chrome/Firefox/Edge use VP9-with-alpha WebM.
+  // With reduced motion we never start the video, so the still poster frame stays.
+  var avatarVideo = document.querySelector('.avatar-video');
+  if (avatarVideo && !reduceMotion) {
+    var ua = navigator.userAgent;
+    var isSafari = /^((?!chrome|chromium|crios|fxios|edg|android).)*safari/i.test(ua);
+    var source = document.createElement('source');
+    source.src = avatarVideo.getAttribute(isSafari ? 'data-hevc' : 'data-webm');
+    source.type = isSafari ? 'video/mp4; codecs="hvc1"' : 'video/webm';
+    avatarVideo.appendChild(source);
+    avatarVideo.preload = 'auto';
+    avatarVideo.load();
+    var playAvatar = function () {
+      var playing = avatarVideo.play();
+      if (playing && playing.catch) playing.catch(function () { /* autoplay blocked: poster stays */ });
+    };
+    playAvatar();
+    // browsers pause video-only media in background tabs to save power; resume when the tab is back
+    document.addEventListener('visibilitychange', function () {
+      if (!document.hidden && avatarVideo.paused) playAvatar();
+    });
   }
 
   /* ---------- Project filters ---------- */
