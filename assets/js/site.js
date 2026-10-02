@@ -196,77 +196,8 @@
     playAvatar();
     // browsers pause video-only media in background tabs to save power; resume when the tab is back
     document.addEventListener('visibilitychange', function () {
-      if (!document.hidden && avatarVideo.paused && !avatarEl.classList.contains('is-tracking')) playAvatar();
+      if (!document.hidden && avatarVideo.paused) playAvatar();
     });
-  }
-
-  /* ---------- Avatar: smoothly turn toward the cursor ---------- */
-  // avatar-sweep.webp holds 31 frames of the Memoji turning from looking left (0) through
-  // straight ahead (15) to looking right (30). The cursor's horizontal offset picks a target
-  // frame, a small tilt covers up/down, and both ease toward their targets every animation
-  // frame so the head glides instead of snapping. After a pause it returns to the idle loop.
-  var avatarEl = document.querySelector('.avatar');
-  var avatarSweep = document.querySelector('.avatar-sweep');
-  if (avatarEl && avatarSweep && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-    var FRAMES = 31, MID = (FRAMES - 1) / 2;
-    var target = { f: MID, tilt: 0, lift: 0 }, now = { f: MID, tilt: 0, lift: 0 };
-    var raf = null, idleTimer = null, lastFrame = -1;
-    var clamp = function (v, lo, hi) { return Math.max(lo, Math.min(hi, v)); };
-
-    var render = function () {
-      // ease 18% of the remaining distance per frame (~60fps → settles in ~0.3s)
-      now.f += (target.f - now.f) * 0.18;
-      now.tilt += (target.tilt - now.tilt) * 0.18;
-      now.lift += (target.lift - now.lift) * 0.18;
-      var frame = Math.round(now.f);
-      if (frame !== lastFrame) { avatarSweep.style.setProperty('--frame', frame); lastFrame = frame; }
-      avatarSweep.style.transform = 'translateY(' + now.lift.toFixed(2) + 'px) rotate(' + now.tilt.toFixed(2) + 'deg)';
-      var settled = Math.abs(target.f - now.f) < 0.05 && Math.abs(target.tilt - now.tilt) < 0.02 && Math.abs(target.lift - now.lift) < 0.02;
-      raf = settled ? null : requestAnimationFrame(render);
-    };
-    var kick = function () { if (!raf) raf = requestAnimationFrame(render); };
-
-    var stopTracking = function () {
-      avatarEl.classList.remove('is-tracking');
-      target.f = MID; target.tilt = 0; target.lift = 0; kick();
-      if (avatarVideo && avatarVideo.currentSrc) {
-        var resumed = avatarVideo.play();
-        if (resumed && resumed.catch) resumed.catch(function () {});
-      }
-    };
-
-    var startTracking = function () {
-      if (avatarEl.classList.contains('is-tracking')) return;
-      avatarEl.classList.add('is-tracking');
-      if (avatarVideo) avatarVideo.pause();
-    };
-
-    // load the sprite only once the page is idle so it never competes with first paint
-    var sprite = new Image();
-    var ready = false;
-    sprite.onload = function () { ready = true; };
-    window.addEventListener('load', function () { sprite.src = 'assets/img/avatar-sweep.webp'; });
-
-    window.addEventListener('pointermove', function (e) {
-      if (!ready) return;
-      var r = avatarEl.getBoundingClientRect();
-      if (r.bottom < 0 || r.top > window.innerHeight) return; // off screen: leave it alone
-      var cx = r.left + r.width / 2, cy = r.bottom - r.width / 2;
-      // normalise each side by the room the cursor actually has on that side (avatar is off-centre)
-      var dx = e.clientX - cx;
-      var nx = clamp(dx / Math.max(dx < 0 ? cx : window.innerWidth - cx, 240), -1, 1);
-      var ny = clamp((e.clientY - cy) / Math.max(window.innerHeight * 0.6, 1), -1, 1);
-      // slight ease-out curve so small movements near the face still read clearly
-      var shaped = Math.sign(nx) * Math.pow(Math.abs(nx), 0.75);
-      target.f = clamp(MID + shaped * MID, 0, FRAMES - 1);
-      target.tilt = nx * ny * -4;   // tip the head toward diagonal corners
-      target.lift = ny * 6;         // nod up/down a few pixels
-      startTracking();
-      kick();
-      clearTimeout(idleTimer);
-      idleTimer = setTimeout(stopTracking, 2500);
-    }, { passive: true });
-    document.addEventListener('mouseleave', function () { clearTimeout(idleTimer); stopTracking(); });
   }
 
   /* ---------- Project filters ---------- */
